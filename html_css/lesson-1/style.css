@@ -60,6 +60,10 @@ body {
     text-align: center;
 }
 
+.middle {
+    padding-top: 64px;
+}
+
 /*h3*/
 .heading {
     font-size: 36px;
@@ -122,6 +126,7 @@ body {
 .middle__content {
     display: flex;
     justify-content: space-between;
+    padding-top: 64px;
 }
 
 .middle__card {
