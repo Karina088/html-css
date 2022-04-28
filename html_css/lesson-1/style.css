@@ -129,6 +129,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .middle__card {
@@ -138,6 +139,13 @@ body {
     background-color: #FFFFFF;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    align-self: center;
+    margin-bottom: 51px;
 }
 
 .card_link {
