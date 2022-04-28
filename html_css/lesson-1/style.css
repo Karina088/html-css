@@ -15,6 +15,14 @@ body {
     opacity: 0.6;
 }
 
+.text_neutral {
+    width: 75%;
+    margin: 32px auto 64px;
+    color: #222222;
+    opacity: 1;
+    text-align: center;
+}
+
 .tex-par {
     width: 425px;
 }
@@ -89,6 +97,48 @@ body {
     border-radius: 10px;
     opacity: 0.4;
 }
+
+.neutral {}
+
+.neutral__item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.neutral__item_margin {
+    margin-right: 32px;
+}
+
+.neutral__img {
+    width: 100%;
+}
+
+.neutral__parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.neutral__paragraph {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    color: #FFFFFF;
+}
+
+/* подумать над расположением */
+/* .neutral__par2 {
+    font-size: 28px;
+    line-height: 46px;
+    text-align: left;
+    position: absolute;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+} */
 
 .but_sub {
     background: #5A98D0;
@@ -231,14 +281,14 @@ body {
     box-sizing: border-box;
 }
 
-.neutral__content {
+.neutral {
     border: 3px solid red;
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 10px;
 }
 
-.neutral__content .text {
+.neutral .text {
     text-align: center;
 }
 
