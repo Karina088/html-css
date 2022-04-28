@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.tex-par {
+    width: 425px;
+}
+
+.top__info {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/top_back.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.top__button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+/*h1*/
+.heading_top {
+    width: 510px;
+    font-size: 64px;
+    font-size: 300;
+    color: #1F3F68;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+/*h2*/
+.heading-contacts {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/*h3*/
+.heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+/*h4*/
+.heading-mini {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.input-fields {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.but_sub {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.menu-site {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 42px;
+}
+
+.content__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.middle__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle__card {
+    width: 359px;
+}
+
+.top__footer {
+    width: 495px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.head-foot {
+    width: 340px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* моя стилизация, оставила для себя */
+/*.top {
+    border: 5px solid rgb(94, 2, 2);
+    box-sizing: border-box;
+}
+
+.top__content {
+    border: 5px solid rgb(248, 3, 252);
+    box-sizing: border-box;
+    margin-bottom: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.top__info {
+    border: 3px solid rgb(5, 117, 254);
+    width: 630px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    padding: 46px;
+    box-sizing: border-box;
+}
+
+.menu {
+    border: 3px solid green;
+    margin-top: 26px;
+}
+
+.middle {
+    border: 5px solid rgb(248, 3, 252);
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.middle__content {
+    border: 4px solid green;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.middle__menu {
+    border: 3px solid rgb(192, 0, 251);
+    width: 350px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 90px;
+    margin-right: 650px;
+    box-sizing: border-box;
+}
+
+.neutral__content {
+    border: 3px solid red;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+
+.neutral__content .text {
+    text-align: center;
+}
+
+.footer {
+    border: 5px solid rgb(94, 2, 2);
+    margin-top: 35px;
+}
+
+.top__footer {
+    border: 5px solid beige;
+    margin-top: 2px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.top_footer_mini {
+    border: 3px solid rgb(233, 190, 246);
+    height: 300px;
+    width: 450px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.top_footer_mini .heading {
+    text-align: left;
+}
+
+.horizontal_line {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: grey;
+    color: grey;
+    height: 2px;
+}
+
+.bottom_footer {
+    border: 5px solid rgb(160, 244, 182);
+    margin-top: 2px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.footer__menu {
+    border: 3px solid rgb(237, 222, 222);
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}*/

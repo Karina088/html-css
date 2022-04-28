@@ -1,0 +1,283 @@
+.menu__site {
+    border: 1px solid #000;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+/* отстилизую блоки */
+.menu__list {
+    list-style-type: none;
+    border: 1px solid #000;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* при наведении на элемент ссылки меняет цвет на красный*/
+.menu__link:hover {
+    color: red;
+}
+
+/* при активации текста цвет меняется на зеленый, active - не популярный псевдокласс, тк в мобил приложении нет курсора мыши */
+.menu__link:active {
+    color: green;
+}
+
+/* делаю скругление углов по бокам сверху*/
+.menu__list:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* делаю скругление углов по бокам снизу */
+.menu__list:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* обращение к дочерним блокам: хочу наводить на элемент списка и у дочернего элемента хочу убрать нижнее подччеркивание при наведении*/
+.menu__list:hover .menu__link {
+    text-decoration: none;
+}
+
+/* можно комбинировать псевдоклассы и псевдоэлементы */
+.menu__li:nth-child(2)::after {
+    content: ' super new';
+    color: red;
+}
+
+/* псевдоэлемент after - благодаря ему можно переносить menu__li_new в листе на любую позицию и он будет работать*/
+/*.menu__li_new:after {
+    content: ' super new';
+    color: red;
+  } */
+
+/* с помощью псевдоэлементов можно отстилисовать */
+.menu__li:before {
+    content: ' * ';
+    color: orange;
+}
+
+/* убирает маркеры и вместо них звездочки */
+.menu {
+    list-style-type: none;
+}
+
+/* найти все элементы menu__li при наведении на них, далее после добавить контент*/
+.menu__lis:hover:after {
+    content: ' <<';
+}
+
+/* можем добавлять с помощью класса .product_new: какие-то контентные части - новинки, скидки, акции*/
+.product {
+    width: 250px;
+    border: 1px solid #000;
+}
+
+.product_new::after {
+    content: 'new';
+    text-transform: uppercase;
+    color: red;
+}
+
+.product__img {
+    height: 150px;
+    background-color: forestgreen;
+}
+
+/* рассмотрю псевдоэлементы first-lette, который определяет стиль 1-ого символа в тексе */
+.text::first-letter {
+    color: blue;
+    font-size: 24px;
+}
+
+/* first-line определяет стиль 1-ой строки блочного текста */
+.text::first-line {
+    color: blueviolet;
+}
+
+/* через генератор таблиц создала таблицу*/
+table.iksweb {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+}
+
+/*блоки с caption делала сама*/
+.table {
+    background-color: darksalmon;
+    color: #000;
+    height: 40px;
+}
+
+.table::first-line {
+    font-size: 26px;
+    color: whitesmoke;
+    font-family: fantasy;
+}
+
+/**/
+
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+    border: 1px solid #595959;
+}
+
+table.iksweb td,
+table.iksweb th {
+    padding: 3px;
+    width: 30px;
+    height: 35px;
+}
+
+table.iksweb th {
+    background: #347c99;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* lesson 5 */
+
+.header {
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+.menu {
+    list-style-type: none;
+    /*убирает маркировку*/
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo {
+    width: 45px;
+    height: 25px;
+    background-color: darkred;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block {
+    width: 150px;
+    height: 250px;
+    border: 1px solid #000;
+}
+
+.new_content {
+    display: flex;
+    height: 200px;
+    background-color: #ccc;
+    justify-content: space-around;
+    /* flex-direction: column;
+    align-items: center; */
+}
+
+.new_block {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.block2 {
+    align-self: center;
+    /* выравнивает себя по центру*/
+}
+
+.block3 {
+    align-self: flex-end;
+}
+
+.mini_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(210, 191, 228);
+
+}
+
+.mini_block {
+    border: 1px solid #000;
+    width: 200px;
+    height: 250px;
+}
+
+/*lesson 5 - flexbox - гибкие размеры контейнера*/
+
+/*центрирование сайта*/
+.container {
+    max-width: 750px;
+    /* отметка просто ширины ограничит значение ширины, остаются на своем месте, не адаптивна для десктопа. max-width: 750px; - Больше 750 быть не может, а меньше может и поэтому адаптив сохраняется для разных десктопных приложений и экранов*/
+    margin: 0 auto;
+    /* центриурет контент*/
+}
+
+/* display: flex; - размещение блоков по горизонтали*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.text-container {
+    flex-grow: 1;
+    /* все они равны друг другу, располагаются друг под другом, но уже таком соотношение, что они равны друн другу*/
+    flex-basis: 200px;
+    /* базовый показатель, то есть меньше 200px быть не может*/
+    border: 1px solid #000;
+}
+
+/* position */
+
+.content-position {
+    position: relative;
+}
+
+.item {
+    width: 105px;
+    height: 150px;
+    background-color: forestgreen;
+    position: absolute;
+}
+
+.item-2 {
+    background-color: orange;
+    top: 50px;
+    left: 50px;
+    /* z-index: -1; - ось, которая идет к нам или от нас, в данном случает, от нас, и оранжевый блок будет накрыт зеленым, то есть где-то там -1, синий 1*/
+}
+
+.item-3 {
+    background-color: darkblue;
+    top: 100px;
+    left: 100px;
+}
+
+.block-sticky {
+    height: 350px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.item-sticky {
+    background-color: grey;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
