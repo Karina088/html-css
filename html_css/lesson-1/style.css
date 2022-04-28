@@ -64,6 +64,10 @@ body {
 .heading {
     font-size: 36px;
     text-align: center;
+    font-weight: 300;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
 }
 
 /*h4*/
