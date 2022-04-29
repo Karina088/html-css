@@ -209,10 +209,9 @@ body {
     text-decoration: none;
 }
 
-/* ??? */
-.arrow__img {
+/* .arrow__img {
     align-self: center;
-}
+} */
 
 .footer {
     background-color: #316099;
@@ -256,6 +255,11 @@ body {
     padding-bottom: 96px;
 }
 
+.top__footer {
+    display: flex;
+    position: relative;
+}
+
 .footer__button {
     font-size: 16px;
     line-height: 26px;
@@ -266,6 +270,7 @@ body {
     padding: 15px 80px;
     text-decoration: none;
     display: inline-block;
+    margin-left: 900px;
 }
 
 .horizontal_line {
