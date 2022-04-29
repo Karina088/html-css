@@ -209,6 +209,11 @@ body {
     text-decoration: none;
 }
 
+/* ??? */
+.arrow__img {
+    align-self: center;
+}
+
 .footer {
     background-color: #316099;
 }
