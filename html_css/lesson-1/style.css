@@ -98,7 +98,9 @@ body {
     opacity: 0.4;
 }
 
-.neutral {}
+.neutral {
+    padding-bottom: 112px;
+}
 
 .neutral__item {
     position: relative;
@@ -130,15 +132,16 @@ body {
     color: #FFFFFF;
 }
 
-/* подумать над расположением */
-/* .neutral__par2 {
+.neutral__par2 {
     font-size: 28px;
     line-height: 46px;
     text-align: left;
     position: absolute;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-} */
+    top: 32px;
+    left: 32px;
+}
 
 .but_sub {
     background: #5A98D0;
@@ -206,6 +209,10 @@ body {
     text-decoration: none;
 }
 
+.footer {
+    background-color: #316099;
+}
+
 .top__footer {
     width: 495px;
 }
@@ -214,11 +221,61 @@ body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-top: 64px;
 }
 
 .head-foot {
     width: 340px;
     text-align: left;
+    padding-top: 203px;
+    padding-left: 113px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.text-foot {
+    padding-top: 32px;
+    padding-left: 113px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-bottom: 96px;
+}
+
+.footer__button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #5A98D0;
+    padding: 15px 80px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.horizontal_line {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.text_foot_menu {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding-top: 32px;
+    padding-bottom: 64px;
 }
 
 .form-container {
