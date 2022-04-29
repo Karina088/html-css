@@ -185,6 +185,10 @@ body {
     padding-bottom: 64px;
 }
 
+.link {
+    margin-left: 14px;
+}
+
 .middle__card {
     width: 359px;
     padding: 44px 32px;
@@ -208,10 +212,6 @@ body {
     color: #5A98D0;
     text-decoration: none;
 }
-
-/* .arrow__img {
-    align-self: center;
-} */
 
 .footer {
     background-color: #316099;
