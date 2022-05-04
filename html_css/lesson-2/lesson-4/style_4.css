@@ -281,3 +281,27 @@ table.iksweb th {
     position: sticky;
     top: 0;
 }
+
+/*Lesson 7 Основы создания адаптивного сайта*/
+
+.container {
+    max-width: 650px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 80px;
+    background-color: green;
+}
+
+.part_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part_block {
+    max-width: 150px;
+    min-height: 150px;
+    border: 1px solid #000;
+}

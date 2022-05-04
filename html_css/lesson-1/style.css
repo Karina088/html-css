@@ -187,6 +187,7 @@ body {
 
 .link {
     margin-left: 14px;
+    vertical-align: middle;
 }
 
 .middle__card {
@@ -262,7 +263,7 @@ body {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #5A98D0;
-    padding: 15px 80px;
+    padding: 15px 50px;
     text-decoration: none;
     display: inline-block;
 }
