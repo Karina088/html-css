@@ -292,7 +292,30 @@ table.iksweb th {
 
 .header {
     min-height: 80px;
+    border-color: #ccc;
     background-color: green;
+}
+
+/*медиа-запрос*/
+/* то есть после 700px разрешения экрана с зеленого цвета поменяет на краснооранжевый*/
+@media (max-width: 700px) {
+    .header {
+        background-color: orangered;
+        border: 1px solid #000;
+    }
+}
+
+.bottom {
+    background-color: blue;
+    width: 150px;
+    height: 50px;
+}
+
+@media (min-width: 320px) {
+    .bottom {
+        display: none;
+        /*доходим до мобильных устройств меньше 320px и появляется синий блок*/
+    }
 }
 
 .part_content {
@@ -304,4 +327,50 @@ table.iksweb th {
     max-width: 150px;
     min-height: 150px;
     border: 1px solid #000;
+}
+
+/* медиа запросы для десктопа, мобильного устройства и плашета в блоке part_content*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/*привожу в горизонтальное положение*/
+.part_content_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    /*стилизация блоков*/
+    width: 180px;
+    border: 1px solid #000;
+    padding: 16px;
+    box-sizing: border-box;
+    /*чтобы паддинги не учитывались в подсчетах ширины*/
+    margin-bottom: 16px;
+}
+
+/*только для десктопной версии*/
+@media (max-width: 1140px) {
+    .part_content_1 {
+        flex-direction: column;
+    }
+}
+
+/* создаю медиа запрос только для планшетых устройств*/
+@media (min-width:320px) and (max-width: 1139px) {
+    .product {
+        width: 100%;
+        display: flex;
+    }
+}
+
+/* создаю медиа запрос для мобильных устройств*/
+@media (max-width: 319px) {
+    .product {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
