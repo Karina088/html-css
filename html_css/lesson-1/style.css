@@ -216,7 +216,6 @@ body {
 }
 
 .footer {
-    margin-top: 112px;
     background-color: #316099;
 }
 
@@ -233,7 +232,7 @@ body {
 .footer-list {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    /* list-style-type: none; - убирает нумерацию*/
     flex-grow: 1;
     font-size: 16px;
     line-height: 26px;
@@ -241,6 +240,8 @@ body {
     color: #FFFFFF;
     padding-top: 64px;
 }
+
+.ol-footer {}
 
 .footer__heading {
     font-weight: 400;
@@ -278,13 +279,15 @@ body {
     box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
 }
 
-.hr {
+.horizontal_line {
     opacity: 0.4;
     border: 1px solid #FFFFFF;
     display: block;
-
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    background: #E5E5E5;
 }
-
 
 .text_foot_menu {
     font-size: 16px;
@@ -300,119 +303,3 @@ body {
     display: flex;
     justify-content: flex-start;
 }
-
-
-/* моя стилизация, оставила для себя */
-/*.top {
-    border: 5px solid rgb(94, 2, 2);
-    box-sizing: border-box;
-}
-
-.top__content {
-    border: 5px solid rgb(248, 3, 252);
-    box-sizing: border-box;
-    margin-bottom: auto;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.top__info {
-    border: 3px solid rgb(5, 117, 254);
-    width: 630px;
-    margin-top: 60px;
-    margin-bottom: 150px;
-    margin-right: 150px;
-    padding: 46px;
-    box-sizing: border-box;
-}
-
-.menu {
-    border: 3px solid green;
-    margin-top: 26px;
-}
-
-.middle {
-    border: 5px solid rgb(248, 3, 252);
-    margin-top: 60px;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.middle__content {
-    border: 4px solid green;
-    margin-bottom: 20px;
-    padding-top: 40px;
-}
-
-.middle__menu {
-    border: 3px solid rgb(192, 0, 251);
-    width: 350px;
-    height: 300px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-right: 90px;
-    margin-right: 650px;
-    box-sizing: border-box;
-}
-
-.neutral {
-    border: 3px solid red;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 10px;
-}
-
-.neutral .text {
-    text-align: center;
-}
-
-.footer {
-    border: 5px solid rgb(94, 2, 2);
-    margin-top: 35px;
-}
-
-.top__footer {
-    border: 5px solid beige;
-    margin-top: 2px;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.top_footer_mini {
-    border: 3px solid rgb(233, 190, 246);
-    height: 300px;
-    width: 450px;
-    text-align: left;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.top_footer_mini .heading {
-    text-align: left;
-}
-
-.horizontal_line {
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 5px;
-    border: none;
-    background-color: grey;
-    color: grey;
-    height: 2px;
-}
-
-.bottom_footer {
-    border: 5px solid rgb(160, 244, 182);
-    margin-top: 2px;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.footer__menu {
-    border: 3px solid rgb(237, 222, 222);
-    height: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-}*/
