@@ -136,16 +136,15 @@ body {
 }
 
 .neutral__par2 {
-    /* font-size: 28px;
-    line-height: 46px; */
+    font-size: 28px;
+    /* line-height: 46px; */
     text-align: left;
-    /* position: absolute;
+    position: absolute;
     letter-spacing: 0.05em;
-    color: #FFFFFF; */
+    color: #FFFFFF;
     top: 32px;
     left: 32px;
     right: auto;
-
 }
 
 .but_sub {
@@ -393,10 +392,11 @@ body {
 
     .neutral__par2 {
         left: 16px;
+        font-size: 14px;
     }
 
     .neutral__parent {
-        font-display: column;
+        flex-direction: column;
         margin-top: 16px;
     }
 
