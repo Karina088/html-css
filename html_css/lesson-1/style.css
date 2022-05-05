@@ -33,6 +33,7 @@ body {
     background-image: url(img/top_back.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .top__button {
@@ -131,17 +132,20 @@ body {
     top: 64px;
     right: 64px;
     color: #FFFFFF;
+    font-weight: 300;
 }
 
 .neutral__par2 {
-    font-size: 28px;
-    line-height: 46px;
+    /* font-size: 28px;
+    line-height: 46px; */
     text-align: left;
-    position: absolute;
+    /* position: absolute;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: #FFFFFF; */
     top: 32px;
     left: 32px;
+    right: auto;
+
 }
 
 .but_sub {
@@ -157,12 +161,12 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -241,8 +245,6 @@ body {
     padding-top: 64px;
 }
 
-.ol-footer {}
-
 .footer__heading {
     font-weight: 400;
     font-size: 36px;
@@ -302,4 +304,104 @@ body {
 .form-container {
     display: flex;
     justify-content: flex-start;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top__info {
+        background-position: right 280px;
+    }
+
+    .middle__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle__card {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 667px) {
+    .menu-site {
+        padding-top: 24px;
+    }
+
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .top__info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .heading_top {
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .tex-par {
+        width: 100%;
+    }
+
+    .top__button {
+        font-style: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .heading {
+        font-style: 24px;
+        line-height: 28px;
+    }
+
+    .middle {
+        padding-top: 48px;
+    }
+
+    .middle__content {
+        padding-top: 32px;
+    }
+
+    .middle__card {
+        width: 100%;
+    }
+
+    .text_neutral {
+        width: 100%;
+    }
+
+    .neutral__paragraph {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .neutral__par2 {
+        left: 16px;
+    }
+
+    .neutral__parent {
+        font-display: column;
+        margin-top: 16px;
+    }
+
+    .neutral__item_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
 }
