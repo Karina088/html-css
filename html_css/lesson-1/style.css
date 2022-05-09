@@ -105,8 +105,6 @@ body {
 .neutral__item {
     position: relative;
     flex-grow: 1;
-    margin-right: 32px;
-
 }
 
 .neutral__item_margin {
@@ -220,9 +218,10 @@ body {
 
 .footer {
     background-color: #316099;
-    padding-top: 91px;
+
+    padding-top: 92px;
     padding-bottom: 64px;
-    padding-top: 112px;
+    /*padding-top: 112px; */
 }
 
 .top__footer {
@@ -352,8 +351,10 @@ body {
         padding-top: 48px;
     }
 
+
     .top_footer_mini {
         flex-direction: column;
+
         align-items: center;
     }
 
@@ -362,6 +363,15 @@ body {
         text-align: left;
         margin-bottom: 32px;
     }
+
+    .text-foot {
+        max-width: 340px;
+    }
+
+    /* .bottom_footer {
+        padding-bottom: 64px;
+        margin: 0 124px;
+    } */
 
     .footer__button {
         padding: 4px 31px;
@@ -441,7 +451,6 @@ body {
     .text_neutral {
         width: 100%;
     }
-
 
     .neutral__paragraph {
         font-size: 16px;
