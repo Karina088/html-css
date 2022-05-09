@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+}
+
+/*  *обнуление стиле */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.top {
+    border: 8px solid rgb(109, 5, 5);
+    width: 1500px;
+    height: 800px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1f3f68;
+}
+
+.text-red {
+    color: red;
+}
+
+.header {
+    background-color: rgb(225, 220, 220);
+}
+
+.border {
+    font-size: 35px;
+    background-color: darkgrey;
+}
+
+.border-weight {
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+}
+
+.block {
+    width: 90%;
+    height: 650px;
+    border: 5px solid #000;
+    border-radius: 10%;
+    border-top: #c56;
+    background-color: #ccc;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/04/21/58/rabbit-1882699_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.block_contact {
+    border: 1px solid #000;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 48px;
+    padding: 48px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    background-color: rgb(219, 249, 250);
+}
+
+.heading-mini {
+    margin-top: 60px;
+}
+
+.text-aqua {
+    color: aqua;
+    background-color: #1f3f68;
+    font-style: italic;
+}
+
+/* streamlined со страницы contact*/
+.block-streamlined {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    float: left;
+    margin-left: 5px;
+    background-color: rgb(233, 129, 145);
+}
+
+.heading-streamlined {
+    border: 1px solid red;
+    overflow: hidden;
+    /* убирает наслаение, в данном случае, красную рамку с h4, которая наслаивается на рамку из .block-streamlined */
+
+
+}
+
+.footer-streamlined {
+    height: 50px;
+    background-color: grey;
+    clear: both;
+    /* всегда идет в паре с overflow: hidden; убирает наслаение нижнего (подвала) на табличку (block-streamlined) */
+}
