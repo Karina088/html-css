@@ -1,0 +1,56 @@
+$widht-site: 1200px;
+$color-block: #777;
+$border-widht: 1px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: $color-block;
+    width: $widht-site;
+    margin: 0 auto;
+}
+
+.menu {
+    width: $widht-site;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    /*через амперсанд можно записывать названия от общего родителя: menu__list, menu__link */
+    &__list {
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        padding: 16px 32px;
+        font-size: 24px;
+    }
+}
+
+.content {
+    padding: 50px 0;
+    width: $widht-site;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    /*content__item*/
+    &__item {
+        width: $widht-site / 3 - 2 * $border-widht;
+        height: 250px;
+        border: $border-widht solid #000;
+    }
+}
+
+.footer {
+    height: 100px;
+    background-color: $color-block - #222;
+    width: $widht-site;
+    margin: 0 auto;
+}

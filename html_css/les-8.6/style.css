@@ -1,0 +1,63 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 100px;
+  background-color: #777;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*через амперсанд можно записывать названия от общего родителя: menu__list, menu__link */
+}
+
+.menu__list {
+  list-style-type: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 32px;
+  font-size: 24px;
+}
+
+.content {
+  padding: 50px 0;
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*content__item*/
+}
+
+.content__item {
+  width: 398px;
+  height: 250px;
+  border: 1px solid #000;
+}
+
+.footer {
+  height: 100px;
+  background-color: #555555;
+  width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
