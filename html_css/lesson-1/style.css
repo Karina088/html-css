@@ -255,6 +255,8 @@ body {
     letter-spacing: 0.05em;
     color: #FFFFFF;
     padding-top: 34px;
+    margin-left: 20px;
+    /* margin-left: исправление для того, чтобы номерки не вылезали за границы flex */
 }
 
 .footer__heading {
