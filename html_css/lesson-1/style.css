@@ -218,10 +218,9 @@ body {
 
 .footer {
     background-color: #316099;
-
     padding-top: 92px;
     padding-bottom: 64px;
-    /*padding-top: 112px; */
+    /* padding-top: 112px; */
 }
 
 .top__footer {
@@ -248,7 +247,6 @@ body {
 .footer-list {
     display: flex;
     justify-content: space-between;
-    /* list-style-type: none; - убирает нумерацию*/
     flex-grow: 1;
     font-size: 16px;
     line-height: 26px;
@@ -300,23 +298,7 @@ body {
 .horizontal_line {
     opacity: 0.4;
     border: 1px solid #FFFFFF;
-    /* display: block;
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    background: #E5E5E5; */
 }
-
-/* .ol-footer::before {
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 32px;
-} */
 
 .ol-footer {
     padding-left: 1em;
@@ -375,11 +357,6 @@ body {
         max-width: 340px;
     }
 
-    /* .bottom_footer {
-        padding-bottom: 64px;
-        margin: 0 124px;
-    } */
-
     .footer__button {
         padding: 4px 31px;
         text-transform: none;
@@ -393,7 +370,6 @@ body {
         margin-bottom: 24px;
         padding-left: 2.5em;
     }
-
 }
 
 @media (max-width: 667px) {
@@ -470,7 +446,7 @@ body {
 
     .neutral__par2 {
         left: 16px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .neutral__parent {
@@ -490,7 +466,6 @@ body {
 
     .top__footer {
         flex-direction: column;
-        /* padding-bottom: 41px; */
     }
 
     .top_footer_mini {
