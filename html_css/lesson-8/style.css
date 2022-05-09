@@ -1,0 +1,55 @@
+.jumbotron {
+    background-color: rgb(223, 222, 222);
+    width: 100%;
+}
+
+.heading {
+    color: rgb(216, 157, 85);
+}
+
+.alert {
+    width: 25%;
+}
+
+.card__group {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card_2 {
+    border: 0.5px solid rgba(80, 80, 80, 0.195);
+    border-radius: 4px;
+}
+
+.card_3 {
+    border: 0.5px solid rgba(80, 80, 80, 0.195);
+    border-radius: 4px;
+}
+
+.head-mini {
+    padding-top: 62px;
+    padding-bottom: 16px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: grey;
+    padding-top: 23px;
+    padding-bottom: 12px;
+}
+
+.heading-footer {
+    color: aliceblue;
+    font-size: 21px;
+}
+
+.par-footer {
+    color: aliceblue;
+    font-size: 16px;
+}
