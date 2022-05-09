@@ -520,6 +520,8 @@ body {
 
     .footer__menu {
         margin-top: 16px;
+        display: flex;
+        justify-content: center;
     }
 
     .ol-footer {
