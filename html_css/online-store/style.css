@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+
+/* действует при условии одного листа без разбивки на дивы внутри top-menu  
+.top__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background: #222222;
+}
+
+.bottom__right {
+    display: flex;
+}
+
+/* если прописывать каждый значок, то будет ровно, как в макете, но это неудобно */
+/* .logo {
+    margin-top: 18px;
+    margin-bottom: 19px;
+}
+
+.search {
+    margin-top: 28px;
+    margin-left: 41px;
+    margin-bottom: 20px;
+} */
+
+.bottom__left {
+    display: flex;
+}
+
+.menu__list-item {
+    margin-top: 27px;
+    margin-left: 41px;
+    margin-bottom: 20px;
+}
+
+.top__info {
+    background-color: #F1E4E6;
+    background-image: url(img/man.png);
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    height: 764px;
+
+}
+
+.top__heading {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    position: absolute;
+    left: 55.75%;
+    padding-top: 290px;
+}
+
+.text {
+    font-size: 34px;
+    line-height: 58px;
+    color: #222222;
+    position: absolute;
+    left: 55.75%;
+    padding-top: 335px;
+}
+
+.span {
+    color: #F16D7F;
+}
+
+.rectangle {
+    position: absolute;
+    left: 54%;
+    padding-top: 289px;
+}
+
+.product__content {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+}
+
+.card {
+    padding-right: 30px;
+}
