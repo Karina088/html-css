@@ -79,6 +79,7 @@ body {
 
 .span {
     color: #F16D7F;
+
 }
 
 .rectangle {
@@ -87,7 +88,7 @@ body {
     padding-top: 289px;
 }
 
-.product__content {
+/* .product__content {
     display: flex;
     justify-content: center;
     padding-top: 65px;
@@ -95,4 +96,39 @@ body {
 
 .card {
     padding-right: 30px;
+    display: flex;
+
+}
+
+.heading-mini {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #222222;
+
+} */
+
+.product__content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+}
+
+.card {
+    padding-right: 30px;
+    display: flex;
+}
+
+.heading-mini {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 53%;
+    padding-left: 103px;
 }
