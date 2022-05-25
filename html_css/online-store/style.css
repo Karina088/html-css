@@ -250,3 +250,37 @@ body {
     border: 1px solid #FF6A6A;
     color: #FFFFFF;
 }
+
+.neutral__content {
+    background: #222224;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 341px; */
+}
+
+.neutral__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 103px;
+}
+
+.neutral-heading {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    color: #FBFBFB;
+    margin-top: 28px;
+}
+
+.neutral-par {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    margin-top: 16px;
+    margin-bottom: 104px;
+
+}
