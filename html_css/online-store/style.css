@@ -182,3 +182,42 @@ body {
     line-height: 17px;
     color: #9F9F9F;
 }
+
+.catalog__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.catalog__card {
+    Width: 360px;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-catalog {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding-top: 25px;
+}
+
+.catalog-par {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-top: 12px;
+}
+
+.text-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
