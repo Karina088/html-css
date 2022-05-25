@@ -183,6 +183,7 @@ body {
     color: #9F9F9F;
 }
 
+
 .catalog__content {
     display: flex;
     justify-content: center;
@@ -195,6 +196,10 @@ body {
     background-color: #F8F8F8;
     display: flex;
     flex-direction: column;
+}
+
+.description {
+    margin-left: 18px;
 }
 
 .heading-catalog {
@@ -211,6 +216,7 @@ body {
     line-height: 17px;
     color: #5D5D5D;
     padding-top: 12px;
+    word-wrap: break-word;
 }
 
 .text-price {
@@ -220,4 +226,27 @@ body {
     color: #F16D7F;
     padding-top: 18px;
     padding-bottom: 20px;
+}
+
+.buttom {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-align: center;
+    border: 1px solid #FF6A6A;
+    margin-top: 48px;
+    padding: 14px 38px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 95px;
+}
+
+.buttom:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #FFFFFF;
 }
