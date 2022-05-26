@@ -254,15 +254,21 @@ body {
 .neutral__content {
     background: #222224;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
-    /* height: 341px; */
 }
 
 .neutral__item {
     display: flex;
     flex-direction: column;
+}
+
+.neutral_img {
     margin-top: 103px;
+}
+
+.neut_img {
+    margin-top: 96px;
 }
 
 .neutral-heading {
@@ -275,6 +281,7 @@ body {
 }
 
 .neutral-par {
+    width: 300px;
     font-weight: 300;
     font-size: 13px;
     line-height: 17px;
@@ -282,5 +289,91 @@ body {
     color: #FBFBFB;
     margin-top: 16px;
     margin-bottom: 104px;
+}
 
+.sub_footer {
+    background-image: url(img/subscribe.svg);
+    width: 100%;
+    height: 448px;
+    position: relative;
+}
+
+.footer__top {
+    background-image: url(img/face.svg);
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 22%;
+    top: 97px;
+}
+
+.top-par {
+    width: 359px;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    position: absolute;
+    top: 136%;
+}
+
+.footer__top_sub {
+    text-align: center;
+    padding-top: 150px;
+    position: absolute;
+    left: 50.81%;
+    right: 14.38%;
+}
+
+.footer_heading {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222224;
+}
+
+.footer-par {
+    color: #222224;
+}
+
+.footer__button {
+    width: 256px;
+    position: absolute;
+    left: 57.31%;
+    right: 26.69%;
+    top: 54.24%;
+    bottom: 34.82%;
+    background-color: #E1E1E1;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    padding: 22px;
+}
+
+.footer__button-right {
+    position: absolute;
+    left: 73.31%;
+    right: 20.44%;
+    top: 54.24%;
+    bottom: 34.82%;
+    background: #E05C6E;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 18px;
 }
