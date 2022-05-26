@@ -382,6 +382,17 @@ body {
 
 .footer__bottom {
     background-color: #222224;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    margin-left: 235px;
+}
+
+.footer__contacts {
+    margin-top: 32px;
+    margin-right: 200px;
 }
 
 .bottom-par {
@@ -390,4 +401,10 @@ body {
     line-height: 19px;
     color: #FBFBFB;
     padding: 30px 30px;
+}
+
+.connection {
+    border: 1px solid white;
+    background-color: #FFFFFF;
+    padding: 8px 11px;
 }
