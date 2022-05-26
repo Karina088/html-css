@@ -379,3 +379,15 @@ body {
     border-bottom-right-radius: 20px;
     padding: 18px;
 }
+
+.footer__bottom {
+    background-color: #222224;
+}
+
+.bottom-par {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding: 30px 30px;
+}
