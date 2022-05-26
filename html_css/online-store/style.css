@@ -348,7 +348,8 @@ body {
     bottom: 34.82%;
     background-color: #E1E1E1;
     text-decoration: none;
-    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -374,6 +375,7 @@ body {
     align-items: center;
     color: #FFFFFF;
     text-decoration: none;
-    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 18px;
 }
