@@ -46,11 +46,6 @@ a {
 
 .top {
     background-color: #F1E4E6;
-    /* у меня было через url мужчина, но при адаптиве с ним сложно работать, и я не знаю, как его сместить в адаптивной версии, чтобы название не полетело*/
-    /* background-image: url(img/man.png);
-    background-repeat: no-repeat;
-    flex-grow: 1;
-    height: 764px; */
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
     display: flex;
@@ -59,11 +54,6 @@ a {
 .top__img {
     width: 50%;
 }
-
-/* .top__content {
-    padding-left: 64px;
-    padding-top: 290px;
-} */
 
 .top__content {
     padding-left: 64px;
@@ -80,9 +70,6 @@ a {
     font-size: 48px;
     line-height: 58px;
     color: #222222;
-    /* position: absolute;
-    left: 56%;
-    padding-top: 290px; */
 }
 
 .top__text {
@@ -90,29 +77,17 @@ a {
     font-size: 32px;
     line-height: 38px;
     color: #222222;
-    /* position: absolute;
-    left: 56%; */
-    /* padding-top: 335px; */
 }
 
 .span {
     color: #F16D7F;
 }
 
-/*было у меня с помощью картинки, но опять же не знаю, как в адаптивной версии красиво разместить, 
-использовала position по теме*/
-/* .rectangle {
-    position: absolute;
-    left: 53%;
-    padding-top: 289px;
-} */
-
 .product {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 64px;
-    /* padding-bottom: 96px; */
 }
 
 .product__content {
@@ -177,18 +152,9 @@ a {
     color: #9F9F9F;
 }
 
-/* .catalog__content {
-    display: flex;
-    justify-content: center;
-    margin-top: 48px;
-    flex-wrap: wrap;
-} */
-
 .catalog__card {
     Width: 360px;
     background-color: #F8F8F8;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .description {
@@ -418,7 +384,4 @@ a {
     .neutral__content {
         flex-direction: column;
     }
-
-
-
 }
