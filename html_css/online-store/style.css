@@ -5,49 +5,45 @@
 }
 
 body {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
 }
 
-/* действует при условии одного листа без разбивки на дивы внутри top-menu  
-.top__content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-} */
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
 
 .menu {
+    min-height: 75px;
     display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     background: #222222;
+    align-items: center;
 }
 
-.bottom__right {
+.menu__left {
     display: flex;
+    align-items: center;
+    gap: 41px;
 }
 
-/* если прописывать каждый значок, то будет ровно, как в макете, но это неудобно */
-/* .logo {
-    margin-top: 18px;
-    margin-bottom: 19px;
-}
-
-.search {
-    margin-top: 28px;
-    margin-left: 41px;
-    margin-bottom: 20px;
-} */
-
-.bottom__left {
+.menu__right {
     display: flex;
+    align-items: center;
+    gap: 33px;
 }
 
-.menu__list-item {
-    margin-top: 27px;
-    margin-left: 41px;
-    margin-bottom: 20px;
-}
 
 .top__info {
     background-color: #F1E4E6;
@@ -142,6 +138,10 @@ body {
 
 .card_img {
     width: 100%;
+}
+
+.bottom-card {
+    margin-right: 2%;
 }
 
 .product_heading {
@@ -407,4 +407,25 @@ body {
     border: 1px solid white;
     background-color: #FFFFFF;
     padding: 8px 10px;
+}
+
+.bottom-par {
+    background: linear-gradient();
+}
+
+@media (max-width: 768px) {
+    .menu {
+        justify-content: space-between;
+    }
+
+    .image-basket {
+        margin-right: 41px;
+    }
+
+    .neutral__content {
+        flex-direction: column;
+    }
+
+
+
 }
