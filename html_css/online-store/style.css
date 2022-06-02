@@ -34,13 +34,13 @@ a {
 
 .menu__left {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 41px;
 }
 
 .menu__right {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 33px;
 }
 
