@@ -251,8 +251,7 @@ a {
 }
 
 .sub_footer {
-    background-image: url(img/subscribe.svg);
-    background-image: no-repeat;
+    background: url(img/subscribe.svg) no-repeat;
     width: 100%;
     height: 448px;
     position: relative;
@@ -367,9 +366,6 @@ a {
     padding: 8px 10px;
 }
 
-.bottom-par {
-    background: linear-gradient();
-}
 
 @media (max-width: 768px) {
     .menu {
