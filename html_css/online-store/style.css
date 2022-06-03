@@ -252,6 +252,7 @@ a {
 
 .sub_footer {
     background-image: url(img/subscribe.svg);
+    background-image: no-repeat;
     width: 100%;
     height: 448px;
     position: relative;
@@ -283,9 +284,8 @@ a {
 .footer__top_sub {
     text-align: center;
     padding-top: 150px;
+    padding-left: 800px;
     position: absolute;
-    left: 50.81%;
-    right: 14.38%;
 }
 
 .footer_heading {
@@ -300,11 +300,10 @@ a {
 
 .footer__button {
     width: 256px;
+    height: 49px;
     position: absolute;
-    left: 57.31%;
-    right: 26.69%;
-    top: 54.24%;
-    bottom: 34.82%;
+    margin-left: 795px;
+    top: 243px;
     background-color: #E1E1E1;
     text-decoration: none;
     border-top-left-radius: 20px;
@@ -321,10 +320,10 @@ a {
 
 .footer__button-right {
     position: absolute;
-    left: 73.31%;
-    right: 20.44%;
-    top: 54.24%;
-    bottom: 34.82%;
+    width: 100px;
+    margin-left: 1000px;
+    margin-top: 243px;
+    height: 49px;
     background: #E05C6E;
     text-align: center;
     font-weight: 400;
@@ -346,12 +345,12 @@ a {
 }
 
 .footer__copyright {
-    margin-left: 235px;
+    margin-right: 235px;
 }
 
 .footer__contacts {
     margin-top: 32px;
-    margin-right: 200px;
+    margin-left: 230px;
 }
 
 .bottom-par {
