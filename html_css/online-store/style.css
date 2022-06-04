@@ -30,12 +30,12 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-summary::after {
+summary:hover {
     content: '\25B6';
     padding-right: 0.5em;
 }
 
-details[open]>summary::after {
+details[open]>summary:hover {
     content: '\25BC';
 }
 
