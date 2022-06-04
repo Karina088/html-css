@@ -128,11 +128,16 @@ a {
 
 /* catalog */
 
+.catalog {
+    padding-bottom: 96px;
+}
+
 .catalog__content {
+    margin-top: 48px;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 48px;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
 }
 
 .heading {
@@ -145,6 +150,7 @@ a {
 }
 
 .par {
+    margin-top: 6px;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
@@ -153,12 +159,25 @@ a {
 }
 
 .catalog__card {
-    Width: 360px;
-    background-color: #F8F8F8;
+    position: relative;
+}
+
+.catalog__card:hover .catalog__img {
+    filter: brightness(0.5);
+}
+
+.catalog__img {
+    width: 100%;
 }
 
 .description {
-    margin-left: 18px;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 16px;
+    gap: 16px;
 }
 
 .heading-catalog {
@@ -166,7 +185,6 @@ a {
     font-size: 13px;
     line-height: 16px;
     color: #000000;
-    padding-top: 25px;
 }
 
 .catalog-par {
@@ -174,8 +192,6 @@ a {
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
-    padding-top: 12px;
-    word-wrap: break-word;
 }
 
 .text-price {
@@ -183,8 +199,31 @@ a {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
-    padding-top: 18px;
-    padding-bottom: 20px;
+}
+
+.catalog__card:hover .catalog__add {
+    display: flex;
+}
+
+.catalog__add {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    border: 1px solid #fff;
+    width: 139px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: #FFFFFF;
+}
+
+.catalog__add:hover {
+    box-shadow: 0 0 5px #fff;
 }
 
 .buttom {
