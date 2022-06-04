@@ -22,6 +22,23 @@ a {
     padding-right: calc(50% - 570px);
 }
 
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '\25B6';
+    padding-right: 0.5em;
+}
+
+details[open]>summary::after {
+    content: '\25BC';
+}
+
 .menu {
     min-height: 75px;
     display: flex;
@@ -31,6 +48,8 @@ a {
     background: #222222;
     align-items: center;
 }
+
+
 
 .menu__left {
     display: flex;
@@ -389,6 +408,11 @@ a {
 .footer__contacts {
     margin-top: 32px;
     margin-left: 230px;
+}
+
+.connection:hover {
+    background: #0e9280;
+    filter: invert();
 }
 
 .bottom-par {
