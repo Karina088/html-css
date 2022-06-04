@@ -22,22 +22,123 @@ a {
     padding-right: calc(50% - 570px);
 }
 
-summary {
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
     display: block;
+    position: absolute;
+    width: 32px;
+    /* height: 23px;
+    /* width: 100%; */
+    height: 2px;
+    background-color: #E8E8E8;
 }
 
-summary::-webkit-details-marker {
-    display: none;
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
 }
 
-summary:hover {
-    content: '\25B6';
-    padding-right: 0.5em;
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
 }
 
-details[open]>summary:hover {
-    content: '\25BC';
+.menu__item_menu {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    position: absolute;
+    top: 37px;
+    left: 34px;
 }
+
+.menu__item_name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    display: flex;
+    text-align: right;
+    padding-top: 24px;
+}
+
+/* контейнер меню */
+.menu__box {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    top: 76px;
+    width: 232px;
+    /*???? h brain*/
+    height: auto;
+    padding: 78px 32px;
+    list-style: none;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+/* элементы меню */
+.menu__item {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-top: 12px;
+    margin-left: 54px;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background: #FFFFFF;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+
 
 .menu {
     min-height: 75px;
@@ -48,8 +149,6 @@ details[open]>summary:hover {
     background: #222222;
     align-items: center;
 }
-
-
 
 .menu__left {
     display: flex;
