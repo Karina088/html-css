@@ -82,6 +82,7 @@ a {
     display: flex;
     text-align: right;
     padding-top: 24px;
+    padding-bottom: 12px;
 }
 
 /* контейнер меню */
@@ -557,9 +558,11 @@ a {
     padding-top: 58px;
 }
 
+
 .breadcrumb__box {
     padding-top: 65px;
 }
+
 
 .breadcrumb__item {
     width: 212px;
@@ -614,6 +617,10 @@ details[open]>summary::after {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+    color: #000000;
+}
+
+.summary__filter:hover {
     color: #EF5B70;
 }
 
