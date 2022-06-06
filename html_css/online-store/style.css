@@ -36,7 +36,7 @@ a {
     /* центрируем содержимое кнопки */
     top: 20px;
     left: 20px;
-    width: 26px;
+    width: 32px;
     height: 26px;
     cursor: pointer;
     z-index: 1;
@@ -49,9 +49,7 @@ a {
     display: block;
     position: absolute;
     width: 32px;
-    /* height: 23px;
-    /* width: 100%; */
-    height: 2px;
+    height: 2.5px;
     background-color: #E8E8E8;
 }
 
@@ -91,10 +89,10 @@ a {
     position: absolute;
     display: block;
     visibility: hidden;
-    top: 76px;
+    transform: translateX(1287px);
+    top: 75px;
     width: 232px;
-    /*???? h brain*/
-    height: auto;
+    height: 730px;
     padding: 78px 32px;
     list-style: none;
     text-align: center;
@@ -137,8 +135,6 @@ a {
     visibility: visible;
     left: 0;
 }
-
-
 
 .menu {
     min-height: 75px;
@@ -541,4 +537,48 @@ a {
     .neutral__content {
         flex-direction: column;
     }
+}
+
+
+/* 2 страница */
+.breadcrumb {
+    height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.heading__bread {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    padding-top: 58px;
+}
+
+.breadcrumb__box {
+    padding-top: 65px;
+}
+
+.breadcrumb__item {
+    width: 212px;
+    display: flex;
+}
+
+.breadcrumb__item>li+li::before {
+    padding: 0 5px;
+    color: #636363;
+    content: "/";
+}
+
+.breadcrumb-list {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+li {
+    list-style-type: none;
 }
