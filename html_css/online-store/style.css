@@ -364,51 +364,53 @@ a {
     color: #FFFFFF;
 }
 
-.neutral__content {
-    background: #222224;
+.advantages {
+    background-color: #222224;
+    padding-top: 104px;
+    padding-bottom: 104px;
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.neutral__item {
+.advantages__item {
+    width: 360px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
-.neutral_img {
-    margin-top: 103px;
+.advantages_img {
+    max-width: 100%;
 }
 
-.neut_img {
-    margin-top: 96px;
-}
-
-.neutral-heading {
+.advantades__heading {
     font-weight: 400;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 24px;
-    text-align: center;
     color: #FBFBFB;
-    margin-top: 28px;
 }
 
-.neutral-par {
-    width: 300px;
+.advantages__text {
     font-weight: 300;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: #FBFBFB;
-    margin-top: 16px;
-    margin-bottom: 104px;
 }
 
-.sub_footer {
+
+.footer {
     background: url(img/subscribe.svg) no-repeat;
-    width: 100%;
     height: 448px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     position: relative;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 .footer__top {
@@ -452,6 +454,7 @@ a {
 }
 
 .footer__button {
+    margin-top: 32px;
     width: 256px;
     height: 49px;
     position: absolute;
@@ -466,10 +469,10 @@ a {
     line-height: 17px;
     display: flex;
     align-items: center;
-    color: #222224;
-    opacity: 0.67;
+    opacity: 0.6;
     padding: 22px;
 }
+
 
 .footer__button-right {
     position: absolute;
@@ -497,21 +500,11 @@ a {
     justify-content: space-between;
 }
 
-.footer__copyright {
-    margin-right: 235px;
-}
-
-.footer__contacts {
+.icons {
     margin-top: 32px;
-    margin-left: 230px;
 }
 
-.connection:hover {
-    background: #0e9280;
-    filter: invert();
-}
-
-.bottom-par {
+.footer__copyright {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -525,6 +518,10 @@ a {
     padding: 8px 10px;
 }
 
+.connection:hover {
+    background: #0e9280;
+    filter: invert();
+}
 
 @media (max-width: 768px) {
     .menu {
