@@ -11,10 +11,10 @@
 
 <body>
     <header class="menu center">
-        <div class="menu__left">
+        <nav class="menu__left">
             <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
             <a href="#"><img src="img/search.svg" alt="search"></a>
-        </div>
+        </nav>
         <nav class="menu__right">
             <!-- <div class="hamburger-menu center">
                 <input id="menu__toggle" type="checkbox" />
@@ -315,10 +315,27 @@
     </section>
 
     <div class="pagination center">
-
+        <nav class="paginator__nav">
+            <ul class="pagination__ul">
+                <li class="page-item">
+                    <a class="aria-hidden" href="#">&laquo;</a>
+                </li>
+                <li class="page-item"><a class="page-link-one" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                <li class="page-item">
+                    <a class="aria-hidden" href="#" aria-label="Next">&raquo;</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <section class="advantages">
+    <section class="advantages center">
         <article class="advantages__item">
             <img class="advantages_img" src="img/car.svg" alt="photo">
             <h4 class="advantades__heading">Free Delivery</h4>
