@@ -534,6 +534,8 @@ a {
 
 
 /* 2 страница */
+/* ----------------------------------------------------------------------- */
+
 .breadcrumb {
     height: 148px;
     background: #F8F3F4;
@@ -575,10 +577,13 @@ li {
     list-style-type: none;
 }
 
-.details {
+.category {
     padding-top: 52px;
+}
+
+.details {
     width: 360px;
-    background: #FFFFFF;
+
 }
 
 .horiz_line {
@@ -615,7 +620,7 @@ summary::after {
     color: #EF5B70;
 }
 
-*/ .summary__name,
+.summary__name,
 .summary__item {
     font-weight: 400;
     font-size: 14px;
@@ -626,6 +631,18 @@ summary::after {
 
 .sum-span {
     color: #EF5B70;
+}
+
+.sort {
+    display: flex;
+    justify-content: center;
+}
+
+.sort__summary {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
 }
 
 .catalog__content_part {
