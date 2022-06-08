@@ -22,18 +22,16 @@ a {
     padding-right: calc(50% - 570px);
 }
 
+/* анимация кнопки меню -> работает если нет ссылки на menu.html*/
 
-/* скрываем чекбокс */
+/* 
 #menu__toggle {
     opacity: 0;
 }
 
-/* стилизуем кнопку */
 .menu__btn {
     display: flex;
-    /* используем flex для центрирования содержимого */
     align-items: center;
-    /* центрируем содержимое кнопки */
     top: 20px;
     left: 20px;
     width: 32px;
@@ -42,7 +40,6 @@ a {
     z-index: 1;
 }
 
-/* добавляем "гамбургер" */
 .menu__btn>span,
 .menu__btn>span::before,
 .menu__btn>span::after {
@@ -85,7 +82,6 @@ a {
     padding-bottom: 12px;
 }
 
-/* контейнер меню */
 .menu__box {
     position: absolute;
     display: block;
@@ -101,7 +97,6 @@ a {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
-/* элементы меню */
 .menu__item {
     display: flex;
     justify-content: flex-start;
@@ -135,7 +130,7 @@ a {
 #menu__toggle:checked~.menu__box {
     visibility: visible;
     left: 0;
-}
+} */
 
 .menu {
     min-height: 75px;
