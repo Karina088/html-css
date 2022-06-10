@@ -697,14 +697,10 @@ summary::after {
     width: 282px;
     border: 2px solid #EBEBEB;
     display: flex;
-    justify-content: space-around;
-    padding: 12px 42px;
+    justify-content: space-evenly;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 5px;
-}
-
-.aria-hidden {
-    color: #000000;
-    width: 8px;
 }
 
 .page-link-one {
