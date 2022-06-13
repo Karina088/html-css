@@ -652,6 +652,7 @@ li {
     display: flex;
     justify-content: center;
     gap: 28px;
+    margin-top: 16px;
 }
 
 .sort__summary {
@@ -738,6 +739,7 @@ li {
 }
 
 /* 3 страница product */
+/* --------------------------------------------------------------------------------- */
 
 .catalog__content_product {
     margin-top: 129px;
@@ -756,9 +758,10 @@ li {
 }
 
 .image__array {
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12px 17px;
     margin-top: 365px;
 }
-
 
 /* .image__big {
     display: flex;
@@ -769,11 +772,6 @@ li {
     display: flex;
     justify-content: space-between;
 } */
-
-.image__array {
-    background: rgba(42, 42, 42, 0.15);
-    padding: 12px 17px;
-}
 
 .collection {
     margin-top: 22px;
