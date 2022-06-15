@@ -465,7 +465,7 @@ summary::marker {
     margin-left: 795px;
     top: 243px;
     background-color: #E1E1E1;
-    text-decoration: none;
+    border: 1px solid #E1E1E1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     font-weight: 400;
@@ -861,10 +861,6 @@ li {
 
 /* 4 страница */
 /* CART ------------------------------------------------------------------------------- */
-.shopping__cart {
-    margin-top: 96px;
-}
-
 @-webkit-keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -889,7 +885,12 @@ li {
     }
 }
 
+.shopping {
+    display: flex;
+}
+
 .shopping__cart {
+    margin-top: 96px;
     display: grid;
     gap: 40px;
 }
@@ -898,6 +899,7 @@ li {
     width: 652px;
     background: #FFFFFF;
     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-duration: 4s;
     display: flex;
 
 }
@@ -907,7 +909,6 @@ li {
     padding-left: 32px;
     background-image: url(img/img_cart/cross.svg);
     background-repeat: no-repeat;
-
 }
 
 .shopping__heading {
@@ -936,6 +937,7 @@ li {
 
 .shopping__but {
     margin-top: 72px;
+    margin-bottom: 128px;
 }
 
 .shopping__button {
@@ -946,7 +948,7 @@ li {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    margin-right: 172px;
+    margin-right: 148px;
 }
 
 .shopping__button:hover {
@@ -958,9 +960,7 @@ li {
 
 
 .shipping__adress {
-    display: flex;
-    justify-content: flex-end;
-
+    margin-top: 112px;
 }
 
 .shipping__text {
@@ -991,17 +991,24 @@ li {
     font-size: 11px;
     line-height: 13px;
     color: #4A4A4A;
+    background-color: #fff;
+    border: 1px solid #A4A4A4;
 }
 
+.shipping__submit:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    box-shadow: 0 0 5px #F26376;
+    color: #FFFFFF;
+}
 
 .checkout {
     width: 360px;
     background: #F5F3F3;
-    margin-bottom: 340px;
 }
 
 .checkout__content {
-
+    margin-top: 56px;
     padding-top: 39px;
 }
 
@@ -1011,6 +1018,7 @@ li {
     line-height: 13px;
     color: #4A4A4A;
     padding-bottom: 12px;
+    text-align: end;
 }
 
 .checkout__grand {
@@ -1019,21 +1027,21 @@ li {
     line-height: 19px;
     color: #222222;
     margin-bottom: 21px;
+    text-align: right;
 }
 
 .checkout__line {
-    width: 275px;
+    max-width: 276px;
     border-bottom: 1px solid #E2E2E2;
-
+    margin-left: 44px;
 }
 
 .checkout__button {
     text-align: center;
-
 }
 
 .checkout__submit {
-    width: 273px;
+    width: 275px;
     background: #F16D7F;
     border: 1px solid #F16D7F;
     color: #FFFFFF;
@@ -1042,5 +1050,5 @@ li {
     line-height: 19px;
     margin-top: 21px;
     margin-bottom: 42px;
-
+    padding: 16px 42px;
 }
