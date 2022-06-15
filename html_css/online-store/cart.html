@@ -10,17 +10,106 @@
 </head>
 
 <body>
-    <div class="top">
-        <div class="container">
-            <ol class="top-menu">
-                <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
-                <li><a href="catalog.html"><img src="img/search.svg" alt="search"></a></li>
-                <li><a href="menu.html"><img src="img/menu.svg" alt="menu"></a></li>
-                <li><a href="account.html"><img src="img/account.svg" alt="account"></a></li>
-                <li><a href="cart.html"><img src="img/basket.svg" alt="basket"></a></li>
-            </ol>
-        </div>
+    <header class="menu center">
+        <nav class="menu__left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="product.html"><img src="img/search.svg" alt="search"></a>
+        </nav>
+        <nav class="menu__right">
+            <a href="catalog.html"><img src="img/menu.svg" alt="menu"></a>
+            <a href="registration.html"><img src="img/account.svg" alt="account"></a>
+            <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb center">
+        <h3 class="heading__bread">SHOPPING CART</h3>
     </div>
+
+    <section class="shopping__cart center">
+        <div class="shopping__content">
+            <img src="img/img_cart/cart-man.svg" alt="photo man">
+            <div class="shopping__description">
+                <h4 class="shopping__heading">MANGO PEOPLE T-SHIRT</h4>
+                <p class="shopping-text">Price:<span class="span"> $300</span></p>
+                <p class="shopping-text">Color: Red</p>
+                <p class="shopping-text">Size: Xl</p>
+                <p class="shopping-text quantity">Quantity: 2</p>
+            </div>
+        </div>
+        <div class="shopping__content">
+            <img src="img/img_cart/cart-blm.jpg" alt="photo man">
+            <div class="shopping__description">
+                <h4 class="shopping__heading">MANGO PEOPLE T-SHIRT</h4>
+                <p class="shopping-text">Price:<span class="span"> $300</span></p>
+                <p class="shopping-text">Color: Red</p>
+                <p class="shopping-text">Size: Xl</p>
+                <p class="shopping-text quantity">Quantity: 2</p>
+            </div>
+        </div>
+
+        <div class="shopping__but">
+            <a href="#" class="shopping__button">CLEAR SHOPPING CART</a>
+            <a href="#" class="shopping__button">CONTINUE SHOPPING</a>
+        </div>
+
+        <div class="shipping__adress">
+            <form class="shipping__form" action="#">
+                <p class="shipping-text">SHIPPING ADRESS</p>
+                <input class="shipping__input" id="name" placeholder="Bangladesh" required="" pattern="\S+[А-яа-я]">
+                <input class="shipping__input" id="name" placeholder="State" required="" pattern="\S+[А-яа-я]">
+                <input class="shipping__input" id="name" placeholder="Postcode / Zip" required="" pattern="\S+[А-яа-я]">
+                <p>
+                    <input class="shipping__submit" type="submit" value="GET A QUOTE">
+                </p>
+            </form>
+        </div>
+
+        <div class="checkout">
+            <div class="checkout__content">
+                <p class="checkout__text">SUB TOTAL $900</p>
+                <p class="checkout__grand">GRAND TOTAL<span class="span"> $900</span></p>
+                <div class="checkout__line"></div>
+
+                <form class="checkout__button" action="#">
+                    <input class="checkout__submit" type="submit" value=" 
+                            PROCEED TO CHECKOUT">
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer center">
+            <div class="footer__opinions">
+                <div class="footer__top">
+                    <p class="footer-par top-par">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar
+                        purus
+                        condimentum“</p>
+                </div>
+                <div class="footer__top_sub">
+                    <h4 class="footer_heading">SUBSCRIBE</h4>
+                    <p class="footer-par"> FOR OUR NEWLETTER AND PROMOTION</p>
+                </div>
+                <form action="#">
+                    <input class="footer__button" id="email" type="email" placeholder="Enter Your Email">
+                </form>
+                <a href="#" class="footer__button-right">Subscribe</a>
+
+        </section>
+        <div class="footer__bottom center">
+            <p class="footer__copyright">&copy;&nbsp;2022 Brand All Rights Reserved.</p>
+            <div class="icons">
+                <a href="#" class="connection"><img class="connetion__img" src="img/facebook.svg" alt="photo"></a>
+                <a href="#" class="connection"><img class="connetion__img" src="img/insta.svg" alt="photo"></a>
+                <a href="#" class="connection"><img class="connetion__img" src="img/pinterest.svg" alt="photo"></a>
+                <a href="#" class="connection"><img class="connetion__img" src="img/twitter.svg" alt="photo"></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
