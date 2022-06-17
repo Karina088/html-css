@@ -1058,14 +1058,6 @@ li {
     }
 }
 
-
-
-.kenburns-top {
-    -webkit-animation: kenburns-top 5s ease-out both;
-    animation: kenburns-top 5s ease-out both;
-}
-
-
 .shopping {
     display: flex;
 }
@@ -1083,14 +1075,19 @@ li {
     animation-duration: 4s;
     animation-iteration-count: 2;
     display: flex;
-
 }
 
 .shopping__description {
     padding-top: 22px;
     padding-left: 32px;
-    background-image: url(img/img_cart/cross.svg);
+    /* background-image: url(img/img_cart/cross.svg); */
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.shopping__cross {
+    position: absolute;
+    margin-left: 300px;
 }
 
 .shopping__heading {
@@ -1217,7 +1214,6 @@ li {
     border-bottom: 1px solid #E2E2E2;
     margin-left: 44px;
 }
-
 
 .checkout__button {
     text-align: center;
