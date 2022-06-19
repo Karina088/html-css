@@ -513,6 +513,7 @@ summary::marker {
 .breadcrumb__item {
     width: 212px;
     display: flex;
+    list-style-type: none;
 }
 
 .breadcrumb__item>li+li::before {
@@ -528,9 +529,6 @@ summary::marker {
     color: #636363;
 }
 
-li {
-    list-style-type: none;
-}
 
 .filter-sort {
     padding-top: 39px;
@@ -701,6 +699,7 @@ li {
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 5px;
+    list-style-type: none;
 }
 
 .page-link-one {
@@ -1224,4 +1223,55 @@ label[for="checkbox-id"] {
     line-height: 16px;
     color: #B1B1B1;
     margin-bottom: 38px;
+}
+
+.registration__submit {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 29px;
+    width: 167px;
+    background: #F16D7F;
+    background-image: url(img/regist-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 128px;
+    margin-bottom: 96px;
+}
+
+.registration {
+    display: flex;
+}
+
+.loyalty {
+    margin-left: 126px;
+}
+
+.loyalty__heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.loyalty__text {
+    margin-top: 21px;
+    margin-bottom: 22px;
+    width: 652px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+
+.loyalty__list {
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+
+.loyalty__list::before {
+    margin-right: 22px;
+    content: url(img/regist-check-mark.svg);
 }
