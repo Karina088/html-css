@@ -1119,6 +1119,7 @@ summary::marker {
 }
 
 .checkout__text {
+    margin-right: 34px;
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
@@ -1128,6 +1129,7 @@ summary::marker {
 }
 
 .checkout__grand {
+    margin-right: 34px;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
