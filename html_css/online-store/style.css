@@ -369,46 +369,82 @@ summary::marker {
 
 .footer {
     background: url(img/subscribe.svg) no-repeat;
-    height: 448px;
+    min-height: 448px;
     padding-top: 32px;
     padding-bottom: 32px;
-    position: relative;
     background-size: cover;
     background-position: center bottom;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__top {
-    background-image: url(img/face.svg);
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    width: 96px;
-    height: 96px;
-    left: 22%;
-    top: 97px;
+    margin-top: 67px;
 }
 
-.top-par {
-    width: 359px;
+.image-footer {
+    display: block;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.footer-par {
+    width: 360px;
+    text-align: center;
     font-weight: 400;
     font-size: 20px;
-    font-style: italic;
     line-height: 24px;
-    text-align: center;
     color: #222224;
-    position: absolute;
-    top: 136%;
 }
 
 .footer__top_sub {
     text-align: center;
     padding-top: 150px;
-    padding-left: 800px;
-    position: absolute;
 }
 
 .footer_heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+
+.footer-text {
+    width: 557px;
+}
+
+.footer__button {
+    margin-top: 32px;
+    width: 256px;
+    height: 48px;
+    background-color: #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 22px;
+    border: none;
+}
+
+.footer__button-right {
+    margin-left: -6px;
+    width: 100px;
+    background: #E05C6E;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 16px;
+}
+
+
+
+/* .footer_heading {
     font-weight: 700;
     font-size: 24px;
     color: #222224;
@@ -457,7 +493,7 @@ summary::marker {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 18px;
-}
+} */
 
 .footer__bottom {
     background-color: #222224;
