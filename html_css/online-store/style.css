@@ -442,59 +442,6 @@ summary::marker {
     padding: 16px;
 }
 
-
-
-/* .footer_heading {
-    font-weight: 700;
-    font-size: 24px;
-    color: #222224;
-}
-
-.footer-par {
-    color: #222224;
-}
-
-.footer__button {
-    margin-top: 32px;
-    width: 256px;
-    height: 49px;
-    position: absolute;
-    margin-left: 795px;
-    top: 243px;
-    background-color: #E1E1E1;
-    border: 1px solid #E1E1E1;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    opacity: 0.6;
-    padding: 22px;
-}
-
-
-.footer__button-right {
-    position: absolute;
-    width: 100px;
-    margin-left: 1000px;
-    margin-top: 243px;
-    height: 49px;
-    background: #E05C6E;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 18px;
-} */
-
 .footer__bottom {
     background-color: #222224;
     display: flex;
@@ -1303,7 +1250,6 @@ label[for="checkbox-id"] {
     color: #000000;
 }
 
-
 .loyalty__list {
     list-style-type: none;
     margin-bottom: 16px;
@@ -1312,4 +1258,121 @@ label[for="checkbox-id"] {
 .loyalty__list::before {
     margin-right: 22px;
     content: url(img/regist-check-mark.svg);
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .header__checkbox:checked~.mobile-menu {
+        transform: scale(1);
+    }
+
+    .mobile-menu {
+        transform: scale(0);
+    }
+
+    .top__info {
+        margin-top: 0;
+    }
+
+    .top__content {
+        display: flex;
+        align-items: center;
+        padding-left: 39px;
+    }
+
+    .top__heading {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .top__text {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .product {
+        gap: 19px;
+    }
+
+    .product__item {
+        min-height: 116px;
+    }
+
+    .catalog__content {
+        gap: 16px;
+    }
+
+    .advantages {
+        gap: 48px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__top_sub {
+        margin-bottom: 120px;
+    }
+
+    .footer-text {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+}
+
+@media (max-width: 667px) {
+
+    .center {
+        padding-left: calc(50% - 362px);
+        padding-right: calc(50% - 362px);
+    }
+
+    .top__heading,
+    .top__text {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .product {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product__content {
+        width: 344px;
+    }
+
+    .advantages {
+        padding-top: 48px;
+        padding-bottom: 81px;
+    }
+
+    .advantages__text {
+        width: 348px;
+    }
+
+    .advantages_img {
+        width: 45px;
+    }
+
+    .footer__bottom {
+        flex-direction: column-reverse;
+    }
+
+    .footer__copyright {
+        padding-top: 40px;
+        padding-bottom: 9px;
+    }
+
+    .icons {
+        text-align: center;
+    }
 }
