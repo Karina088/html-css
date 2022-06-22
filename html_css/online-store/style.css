@@ -30,6 +30,11 @@ summary::marker {
     padding-right: calc(50% - 570px);
 }
 
+.top {
+    position: relative;
+    overflow: hidden;
+}
+
 .menu {
     min-height: 75px;
     display: flex;
@@ -59,23 +64,31 @@ summary::marker {
 }
 
 .header__checkbox:checked~.mobile-menu {
-    /* transform: scale(0); */
-    opacity: 0;
+    right: 0;
 }
 
 .mobile-menu {
     position: absolute;
     top: 75px;
-    right: 0;
+    right: -232px;
     z-index: 1;
-    transform: scale(1);
-    /* transition: transform 0.6s; - отвечает за то, чтобы убрать гамбургер-меню с анимацией */
-    transition: opacity 0.4s;
+    transform: right 0.6s;
+    transition: right 0.6s;
     width: 232px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     padding: 32px;
     box-sizing: border-box;
+}
+
+.mobile-menu__link-site {
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e8e8e8;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: none;
 }
 
 .mobile-menu__heading {
@@ -122,35 +135,35 @@ summary::marker {
     margin-top: 24px;
 }
 
-.top {
+.promo {
     background-color: #F1E4E6;
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
     display: flex;
 }
 
-.top__img {
+.promo__img {
     width: 50%;
 }
 
-.top__content {
+.promo__content {
     padding-left: 64px;
 }
 
-.top__info {
+.promo__info {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
     margin-top: 67%;
 }
 
-.top__heading {
+.promo__heading {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     color: #222222;
 }
 
-.top__text {
+.promo__text {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
@@ -1152,6 +1165,7 @@ summary::marker {
 /* 5 part REGISTRATION ______________________________________________________ */
 
 .registration {
+    display: flex;
     margin-top: 64px;
 }
 
@@ -1225,13 +1239,10 @@ label[for="checkbox-id"] {
     margin-bottom: 96px;
 }
 
-.registration {
-    display: flex;
-}
-
 .loyalty {
     margin-left: 126px;
 }
+
 
 .loyalty__heading {
     font-weight: 300;
@@ -1274,22 +1285,22 @@ label[for="checkbox-id"] {
         transform: scale(0);
     }
 
-    .top__info {
+    .promo__info {
         margin-top: 0;
     }
 
-    .top__content {
+    .promo__content {
         display: flex;
         align-items: center;
         padding-left: 39px;
     }
 
-    .top__heading {
+    .promo__heading {
         font-size: 44px;
         line-height: 53px;
     }
 
-    .top__text {
+    .promo__text {
         font-size: 24px;
         line-height: 29px;
     }
@@ -1327,15 +1338,104 @@ label[for="checkbox-id"] {
 
 }
 
-@media (max-width: 667px) {
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 260px);
+        padding-right: calc(50% - 260px);
+    }
+
+    .mobile-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .mobile-menu__link-site {
+        display: flex;
+    }
+
+    .header__checkbox:checked~.mobile-menu {
+        right: 0;
+    }
+
+    .menu__link-site {
+        display: none;
+    }
+
+    .promo__img {
+        display: none;
+    }
+
+    .promo__content {
+        min-height: 363px;
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .promo__heading {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .promo__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .product {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+
+    .product__content img {
+        width: 100%;
+    }
+
+    .product_item {
+        min-height: 111px;
+        background-image: url(img/accesories.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .product_item img {
+        display: none;
+    }
+
+    .catalog__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .catalog__add {
+        top: 30%;
+        left: 33%;
+    }
+
+    .footer__bottom {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 42px;
+        padding-bottom: 9px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 525px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* @media (max-width: 667px) {
 
     .center {
         padding-left: calc(50% - 362px);
         padding-right: calc(50% - 362px);
     }
 
-    .top__heading,
-    .top__text {
+    .promo__heading,
+    .promo__text {
         font-size: 38px;
         line-height: 46px;
     }
@@ -1375,4 +1475,4 @@ label[for="checkbox-id"] {
     .icons {
         text-align: center;
     }
-}
+} */
