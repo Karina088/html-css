@@ -7,6 +7,9 @@
 body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
 }
 
 img {
@@ -33,6 +36,7 @@ summary::marker {
 .top {
     position: relative;
     overflow: hidden;
+    /* flex-grow: 1; */
 }
 
 .menu {
@@ -381,6 +385,7 @@ summary::marker {
 }
 
 .footer {
+    /* height: 100px; */
     background: url(img/subscribe.svg) no-repeat;
     min-height: 448px;
     padding-top: 32px;
@@ -1201,19 +1206,22 @@ summary::marker {
     gap: 10px;
 }
 
-input[type="registration-checkbox"] {
+input[type="checkbox"] {
     border: 1px solid #A4A4A4;
-    width: 17px;
-    border-radius: 10px;
+    /* не работает ширина и радиус для кнопок  */
+    /* width: 17px;
+    border-radius: 10px; */
 }
 
-label[for="checkbox-id"] {
+label[for="gender"],
+label[for="gender_2"] {
     margin-right: 10px;
     font-weight: 300;
     font-size: 11px;
     line-height: 13px;
     color: #000000;
 }
+
 
 .registration-text {
     width: 360px;
@@ -1242,7 +1250,6 @@ label[for="checkbox-id"] {
 .loyalty {
     margin-left: 126px;
 }
-
 
 .loyalty__heading {
     font-weight: 300;
@@ -1275,14 +1282,6 @@ label[for="checkbox-id"] {
     .center {
         padding-left: calc(50% - 368px);
         padding-right: calc(50% - 368px);
-    }
-
-    .header__checkbox:checked~.mobile-menu {
-        transform: scale(1);
-    }
-
-    .mobile-menu {
-        transform: scale(0);
     }
 
     .promo__info {
@@ -1335,7 +1334,6 @@ label[for="checkbox-id"] {
         justify-content: flex-end;
     }
 
-
 }
 
 @media (max-width: 767px) {
@@ -1357,7 +1355,7 @@ label[for="checkbox-id"] {
         right: 0;
     }
 
-    .menu__link-site {
+    .header__link-site {
         display: none;
     }
 
@@ -1426,53 +1424,3 @@ label[for="checkbox-id"] {
         padding-right: 16px;
     }
 }
-
-/* @media (max-width: 667px) {
-
-    .center {
-        padding-left: calc(50% - 362px);
-        padding-right: calc(50% - 362px);
-    }
-
-    .promo__heading,
-    .promo__text {
-        font-size: 38px;
-        line-height: 46px;
-    }
-
-    .product {
-        gap: 32px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .product__content {
-        width: 344px;
-    }
-
-    .advantages {
-        padding-top: 48px;
-        padding-bottom: 81px;
-    }
-
-    .advantages__text {
-        width: 348px;
-    }
-
-    .advantages_img {
-        width: 45px;
-    }
-
-    .footer__bottom {
-        flex-direction: column-reverse;
-    }
-
-    .footer__copyright {
-        padding-top: 40px;
-        padding-bottom: 9px;
-    }
-
-    .icons {
-        text-align: center;
-    }
-} */
