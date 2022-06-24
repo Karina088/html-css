@@ -416,6 +416,8 @@ summary::marker {
 }
 
 .footer__top_sub {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-top: 150px;
 }
@@ -433,7 +435,6 @@ summary::marker {
 }
 
 .footer__button {
-    margin-top: 32px;
     width: 256px;
     height: 48px;
     background-color: #E1E1E1;
@@ -444,6 +445,12 @@ summary::marker {
     line-height: 17px;
     padding: 22px;
     border: none;
+}
+
+.footer__form {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__button-right {
@@ -1174,6 +1181,7 @@ summary::marker {
     margin-top: 64px;
 }
 
+
 .registration__form {
     display: flex;
     flex-direction: column;
@@ -1261,7 +1269,6 @@ label[for="gender_2"] {
 .loyalty__text {
     margin-top: 21px;
     margin-bottom: 22px;
-    width: 652px;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -1323,6 +1330,10 @@ label[for="gender_2"] {
     .footer {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-par {
+        margin: auto;
     }
 
     .footer__top_sub {
@@ -1409,12 +1420,32 @@ label[for="gender_2"] {
         left: 33%;
     }
 
+    .footer-par {
+        max-width: 342px;
+        margin: auto;
+    }
+
+
+
+    /* .footer__button {
+        max-width: 300px;
+    }
+
+    .footer__button-right {
+        width: 94px;
+    } */
+
     .footer__bottom {
         flex-direction: column-reverse;
         gap: 40px;
         padding-top: 42px;
         padding-bottom: 9px;
         text-align: center;
+    }
+
+    .footer-text {
+        justify-content: center;
+        width: 100%;
     }
 }
 
