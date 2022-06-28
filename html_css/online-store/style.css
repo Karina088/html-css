@@ -1050,11 +1050,13 @@ summary::marker {
     margin-bottom: 6px;
 }
 
-/* .quantity {
+
+
+input[id="quantity"] {
     border: 1px solid #EAEAEA;
     width: 44px;
     height: 24px;
-} */
+}
 
 .shopping__but {
     margin-top: 72px;
@@ -1222,12 +1224,6 @@ summary::marker {
     gap: 10px;
 }
 
-input[type="checkbox"] {
-    border: 1px solid #A4A4A4;
-    /* не работает ширина и радиус для кнопок  */
-    /* width: 17px;
-    border-radius: 10px; */
-}
 
 label[for="gender"],
 label[for="gender_2"] {
