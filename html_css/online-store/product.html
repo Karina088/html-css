@@ -125,23 +125,21 @@
             <div class="sort">
                 <details class="sort__details">
                     <summary class="sort__summary">CHOOSE COLOR</summary>
-                    <div class="sort__content"></div>
                 </details>
                 <details class="sort__details">
                     <summary class="sort__summary">CHOOSE SIZE</summary>
-                    <div class="sort__content"></div>
                     <form class="sort__form" action="#">
-                        <label class="size" for="size_1">
-                            <input id="size_1" type="checkbox">XS
+                        <label class="size">
+                            <input type="checkbox"><span> XS</span>
                         </label>
-                        <label class="size" for="size_2">
-                            <input id="size_2" type="checkbox">S
+                        <label class="size">
+                            <input type="checkbox"><span> S</span>
                         </label>
-                        <label class="size" for="size_3">
-                            <input id="size_3" type="checkbox">M
+                        <label class="size">
+                            <input type="checkbox"><span> M</span>
                         </label>
-                        <label class="size" for="size_4">
-                            <input id="size_4" type="checkbox">L
+                        <label class="size">
+                            <input type="checkbox"><span> L</span>
                         </label>
                     </form>
                 </details>
@@ -238,8 +236,11 @@
                 <h4 class="footer_heading">SUBSCRIBE</h4>
                 <p class="footer-text"> FOR OUR NEWLETTER AND PROMOTION</p>
                 <form class="footer__form" action="#">
-                    <input class="footer__button" id="email" type="email" placeholder="Enter Your Email">
-                    <a href="#" class="footer__button-right">Subscribe</a>
+                    <input class="footer__button" id="email" type="email" placeholder="Enter Your Email"
+                        pattern="\S+@[a-z]+.[a-z]+">
+                    <p>
+                        <input class="footer__button-right" type="submit" value="Subscribe">
+                    </p>
                 </form>
             </div>
         </section>

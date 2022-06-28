@@ -335,7 +335,6 @@ summary::marker {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    margin-bottom: 95px;
 }
 
 .buttom:hover {
@@ -465,6 +464,7 @@ summary::marker {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 16px;
+    border: none;
 }
 
 .footer__bottom {
@@ -679,7 +679,9 @@ summary::marker {
     color: #6F6E6E;
     padding-left: 9px;
     padding-top: 9px;
+    flex-direction: column;
 }
+
 
 .catalog__content_part {
     margin-top: 64px;
@@ -1022,7 +1024,9 @@ summary::marker {
 .shopping__cross {
     position: absolute;
     margin-left: 300px;
+    transition: all 0.4s;
 }
+
 
 .shopping__heading {
     width: 262px;
@@ -1031,7 +1035,11 @@ summary::marker {
     line-height: 29px;
     color: #222222;
     padding-bottom: 42px;
+    transition: all .4s;
+}
 
+.shopping__heading:hover {
+    cursor: pointer;
 }
 
 .shopping-text {
@@ -1062,6 +1070,7 @@ summary::marker {
     font-size: 14px;
     line-height: 17px;
     margin-right: 148px;
+    transition: all 0.4s;
 }
 
 .shopping__button:hover {
@@ -1070,7 +1079,6 @@ summary::marker {
     box-shadow: 0 0 5px #F26376;
     color: #FFFFFF;
 }
-
 
 .shipping__adress {
     margin-top: 112px;
