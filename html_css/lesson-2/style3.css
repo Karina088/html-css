@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   font-family: sans-serif;
 }
@@ -8,13 +9,19 @@ body {
     margin: 0;
     padding: 0;
 } */
+
 .top {
   border: 8px solid #6d0505;
   width: 1500px;
   height: 800px;
   margin-top: 5px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.top__site {
+  text-decoration: none;
+  color: #1f3f68;
 }
 
 p {
@@ -62,7 +69,7 @@ p {
   margin-top: 48px;
   padding: 48px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 50px;
   background-color: #dbf9fa;
 }
@@ -99,4 +106,52 @@ p {
   clear: both;
   /* всегда идет в паре с overflow: hidden; убирает наслаение нижнего (подвала) на табличку (block-streamlined) */
 }
+
 /*# sourceMappingURL=style.css.map */
+
+.content {
+  display: flex;
+  text-align: center;
+}
+
+.border {
+  display: inline-block;
+  /* Строчно-блочный элемент */
+  position: relative;
+  /* Относительное позиционирование */
+  outline: 1px solid #fff;
+  /* Параметры рамки */
+}
+
+.border,
+.border::after {
+  padding: 4px;
+  /* Толщина внутренней рамки */
+  background: #dad6cf;
+  /* Цвет внутренней рамки */
+  border: 2px solid #c2b59d;
+  /* Параметры рамки */
+  box-sizing: border-box;
+  /* Не учитываем padding */
+}
+
+.border img {
+  display: block;
+}
+
+.border::after {
+  content: '';
+  /* Выводим рамку */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 0;
+  top: 0;
+  /* Положение */
+  width: 100%;
+  height: 100%;
+  /* Размеры */
+  z-index: -1;
+  /* Опускаем вниз */
+  transform: rotate(-7deg);
+  /* Поворачиваем */
+}
