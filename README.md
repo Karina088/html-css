@@ -1,1 +1,1 @@
-# html-css
+# educational project online store
